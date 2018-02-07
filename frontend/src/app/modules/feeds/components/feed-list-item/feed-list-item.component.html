@@ -1,0 +1,13 @@
+<div class="wrapper">
+  <a class="feed" [routerLink]="['/channel', feed.info.id]" routerLinkActive="active"
+     (click)="toggleArticlesDisplay()">{{feed.info.title}}</a>
+  <div class="count">{{newArticles}}</div>
+</div>
+
+
+<ng-template [ngIf]="isActive">
+  <div *ngFor="let article of feed.articles" style="position: relative">
+    <a class="article" [routerLink]="['/channel', feed.info.id, 'message', article.guid]" routerLinkActive="active">{{article.title}}</a>
+    <div class="count" *ngIf="!article.visited">New</div>
+  </div>
+</ng-template>

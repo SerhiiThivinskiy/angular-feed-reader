@@ -1,0 +1,17 @@
+<div class="content">
+  <div class="row">
+    <div class="col-lg-3 col-md-3">
+      <div class="wrapper">
+        <div class="feeds-list">
+          <div *ngFor="let feed of feeds">
+            <app-feed-list-item [feed]="feed" (click)="onSelectFeed(feed)"></app-feed-list-item>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-9 col-md-9">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>

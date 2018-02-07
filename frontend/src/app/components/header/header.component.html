@@ -1,0 +1,19 @@
+<div class="row header">
+  <div class="col-lg-3 col-md-3 col-sm-3 title">
+    <span class="align-middle"><a class="site-title" [routerLink]="['/']">YouTube viewer</a></span>
+  </div>
+  <div class="col-lg-5 col-md-5 col-sm-5">
+    <input class="form-control" placeholder="https://www.youtube.com/channel/..." #feedUrl
+           (keyup.enter)="addFeed(feedUrl.value); feedUrl.value=''">
+  </div>
+  <div class="col-lg-2 col-md-1 col-sm-1">
+    <button class="btn btn-outline-primary" (click)="addFeed(feedUrl.value); feedUrl.value=''">Add</button>
+  </div>
+  <div class="col-lg-2 col-md-3 col-sm-3" *ngIf="isFeedsPresent">
+    <a class="btn btn-outline-primary float-right" [routerLink]="['statistic']"><i class="fa fa-pie-chart"
+                                                                                   aria-hidden="true"></i></a>
+    <button class="btn btn-outline-primary float-right" (click)="updateFeeds()"><i class="fa fa-refresh"
+                                                                                   aria-hidden="true"></i></button>
+  </div>
+</div>
+

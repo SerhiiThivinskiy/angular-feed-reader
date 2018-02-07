@@ -1,0 +1,41 @@
+.wrapper {
+  position: relative;
+  background-color: #F7CA18;
+  color: #34495E;
+}
+
+.feed {
+  display: block;
+  padding: 3% 5%;
+  border-bottom: solid 1px white;
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+.article {
+  display: block;
+  color: #34495E;
+  text-decoration: none;
+  cursor: pointer;
+  background-color: #F4D03F;
+  padding: 2% 10%;
+  border-bottom: solid 1px white;
+  font-size: 80%;
+}
+
+.count {
+  position: absolute;
+  right: 0;
+  top: 0;
+  min-width: 20px;
+  color: #34495E;
+  background-color: #6BB9F0;
+  text-align: center;
+  border-bottom-left-radius: 15%;
+  box-shadow: 0 2px 1px grey;
+}
+
+.feed:hover, .active {
+  background-color: #F5AB35;
+}

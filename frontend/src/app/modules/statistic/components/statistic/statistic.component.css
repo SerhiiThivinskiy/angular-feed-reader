@@ -1,0 +1,18 @@
+.feed-info {
+  font-weight: bold;
+  margin-right: 20px;
+}
+
+.row {
+  margin-bottom: 15px;
+}
+
+.underlined {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  border-bottom: solid 1px #cccccc;
+}
+
+.underlined h2 {
+  font-weight: 300;
+}

@@ -1,0 +1,9 @@
+.alert {
+  position: fixed;
+  right: 1%;
+  top: 10%;
+  width: 20%;
+  height: 20%;
+  min-height: 100px;
+  opacity: 0.9;
+}

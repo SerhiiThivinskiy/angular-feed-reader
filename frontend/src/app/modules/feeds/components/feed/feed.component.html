@@ -1,0 +1,20 @@
+<div class="container">
+  <div class="row justify-content-between feed-header">
+    <div class="col-6">
+      <h2>{{feed.info.title}}</h2>
+    </div>
+    <div class="col-6">
+      <button type="button" class="btn btn-outline-danger float-right" (click)="removeFeed()">Remove</button>
+      <button type="button" class="btn btn-outline-success float-right" (click)="updateFeed()">Refresh</button>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-lg-3 col-md-3 article" *ngFor="let article of feed.articles">
+      <img class="img-fluid" [src]="article.image.url" (click)="showArticle(article)">
+      <div class="article-title">{{article.title}}</div>
+      <div class="article-pub-date">{{article.pubDate | date:'medium'}}</div>
+    </div>
+  </div>
+</div>
+
+<router-outlet></router-outlet>

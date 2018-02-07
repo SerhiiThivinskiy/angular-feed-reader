@@ -1,0 +1,22 @@
+.header {
+  background-color: #F7CA18;
+  border-bottom: 1px solid grey;
+  padding: 1%;
+}
+
+.title {
+  font-size: 130%;
+  font-weight: 600;
+  color: #0275d8;
+}
+
+.float-right {
+  margin-right: 5px;
+}
+
+
+.site-title {
+  text-decoration: none;
+  cursor: pointer;
+}
+

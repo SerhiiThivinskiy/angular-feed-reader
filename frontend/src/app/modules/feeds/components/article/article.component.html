@@ -1,0 +1,27 @@
+<div class="container">
+  <div class="underlined">
+    <h2 class="article-header">{{article.title}}</h2>
+  </div>
+  <div class="row">
+    <div class="col-lg-12 col-md-12 text-center">
+      <youtube-player
+        [height]="article.videoHeight"
+        [width]="article.videoWidth"
+        (ready)="savePlayer($event)"
+      ></youtube-player>
+    </div>
+    <div class="col-lg-12 col-md-12 underlined">
+    </div>
+    <div class="col-lg-12 col-md-12">
+      <p class="font-italic">
+        About this video:
+      </p>
+      <p class="article-description">
+        {{article.description}}
+      </p>
+    </div>
+    <div class="col-lg-12 col-md-12">
+      <p class="article-pub-date float-right">Public date: {{article.pubDate | date:'medium'}}</p>
+    </div>
+  </div>
+</div>

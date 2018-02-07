@@ -1,0 +1,33 @@
+.article-title {
+  font-size: 90%;
+  font-weight: 400;
+  padding: 5px 0;
+}
+
+.article-pub-date {
+  font-size: 80%;
+  font-weight: 400;
+  color: #868e96;
+}
+
+.article {
+  padding-bottom: 15px;
+}
+
+.article img, button {
+  cursor: pointer;
+}
+
+.feed-header {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  border-bottom: solid 1px #cccccc;
+}
+
+.feed-header h2 {
+  font-weight: 300;
+}
+
+.float-right {
+  margin-right: 5px;
+}

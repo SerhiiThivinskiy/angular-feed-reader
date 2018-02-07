@@ -1,0 +1,23 @@
+.underlined {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  border-bottom: solid 1px #cccccc;
+}
+
+.article-header {
+  font-weight: 300;
+}
+
+.article-description {
+  font-weight: 300;
+  font-size: 80%;
+  line-height: 2;
+  text-indent: 1.5em;
+  text-align: justify;
+}
+
+.article-pub-date {
+  font-size: 75%;
+  font-weight: 300;
+  color: #868e96;
+}
